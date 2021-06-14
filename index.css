@@ -1,0 +1,111 @@
+body {
+  text-align: center;
+  background: whitesmoke;
+}
+
+div {
+  display: inline-block;
+}
+
+#table {
+  display: block;
+  margin-top: 20px;
+  background: #9daaf2;
+}
+
+/* Table Styling*/
+
+.table-output {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table-output th {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.table-output th,
+.table-output td {
+  padding: 12px 15px;
+}
+
+.table-output tr td {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.table-output tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+/* Table Styling End */
+
+/* Pagination Styling */
+
+.pagenumbers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagenumbers button {
+  width: 40px;
+  height: 30px;
+
+  appearance: none;
+  border: grey 1px;
+  outline: none;
+  cursor: pointer;
+
+  background-color: white;
+
+  margin: 0px;
+  border-right: grey solid 0.5px;
+  border-top: grey solid 0.5px;
+  border-bottom: grey solid 0.5px;
+
+  transition: 0.4s;
+
+  color: rgb(38, 88, 117);
+  font-size: 18px;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pagenumbers button:hover {
+  background-color: #9daaf2;
+}
+
+.pagenumbers button.active {
+  background-color: rgb(2, 111, 176);
+  color: white;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+#first,
+#prev,
+#last,
+#next {
+  width: 45px;
+  height: 30px;
+}
+
+#first,
+#last {
+  border-top-left-radius: 10%;
+}
+
+#first {
+  border-left: grey solid 0.5px;
+}
+
+/* Pagination Styling End */
